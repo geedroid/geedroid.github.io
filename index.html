@@ -1,56 +1,64 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Flutter</title>
+    <title>Flutter</title>
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/pikestreet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/pikestreet.css">
 
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css">
 
-        <!-- Printing and PDF exports -->
-        <script>
+    <!-- Printing and PDF exports -->
+    <script>
             var link = document.createElement( 'link' );
             link.rel = 'stylesheet';
             link.type = 'text/css';
             link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
-    </head>
-    <body>
-        <div class="reveal pikestreet">
-            <div class="slides">
-               <section data-background-iframe="https://compass-ssl.surface.com/assets/11/4e/114ea758-b2b9-4567-bedd-77086c3d80fb.mp4?n=vid-loop-100314.mp4?autoplay=1" data-background-video-loop="true" data-background-size="cover" data-background-interactive>
-                <div class="accent">
-                    <h3>Beautiful native app in record time</h3>
-                    <h1>Flutter</h1>
-                </div>
-                
-                <small>温馨提示：为了更好的观看体验，请按F键进入全屏模式，并使用方向键前进或者后退。</small>
-                   
-                <small>James.Li<br/>编程如逆水行舟，不进则退！</small>
 
-                <aside class="notes">
-                    Hi, I'm a Speaker Note. You can open the Speaker View by hitting [S] on your keyboard.
-                </aside>
-            </section>
+
+
+    </script>
+</head>
+<body>
+<div class="reveal pikestreet">
+    <div class="slides">
+        <section
+                data-background-iframe="https://compass-ssl.surface.com/assets/11/4e/114ea758-b2b9-4567-bedd-77086c3d80fb.mp4?n=vid-loop-100314.mp4?autoplay=1"
+                data-background-video-loop="true" data-background-size="cover"
+                data-background-interactive>
+            <div class="accent">
+                <h3>Beautiful native app in record time</h3>
+                <h1>Flutter</h1>
+            </div>
+
+            <small>温馨提示：为了更好的观看体验，请按F键进入全屏模式，并使用方向键前进或者后退。</small>
+
+            <small>James.Li<br/>编程如逆水行舟，不进则退！</small>
+
+            <aside class="notes">
+                Hi, I'm a Speaker Note. You can open the Speaker View by hitting [S] on your
+                keyboard.
+            </aside>
+        </section>
 
         <section data-markdown>
             <script type="text/template">
                 ## Flutter 新一代跨平台解决方案
 
-                
+
                 9102年，对于开发界来说，最火的技术是什么？
                 当然得是flutter。不管你是做前端，后端，Android，iOS，还是别的，都可以看到铺天盖地关于flutter的文章，
                 一片叫好声，声声入耳。
-                 <!-- .element: class="fragment" style="text-align: left;" -->
+                <!-- .element: class="fragment" style="text-align: left;" -->
 
-                 Flutter是Google公司推出的一套跨平台解决方案，Google 2019 I/O大会上宣称，目前支持Android/iOS/Desktop/Web/Embedded/，可以看到基本上涵盖了目前市面上所有的主流平台。
+                Flutter是Google公司推出的一套跨平台解决方案，Google 2019 I/O大会上宣称，目前支持Android/iOS/Desktop/Web/Embedded/，可以看到基本上涵盖了目前市面上所有的主流平台。
                 <!-- .element: class="fragment" style="text-align: left;" -->
 
             </script>
@@ -78,12 +86,18 @@
                 <!-- .element: class="fragment" style="text-align: left;" -->
             </script>
         </section>
-            </div>
-        </div>
+        <section data-markdown>
+            <script type="text/template">
+                ## 0x01 flutter框架
+                ![](images/flutter-architecture.png)
+            </script>
+        </section>
+    </div>
+</div>
 
-        <script src="js/reveal.js"></script>
+<script src="js/reveal.js"></script>
 
-        <script>
+<script>
             // More info about config & dependencies:
             // - https://github.com/hakimel/reveal.js#configuration
             // - https://github.com/hakimel/reveal.js#dependencies
@@ -97,5 +111,8 @@
                     { src: 'plugin/highlight/highlight.js', async: true }
                 ]
             });
-        </script>
-    </body>
+
+
+
+</script>
+</body>

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
     <title>Flutter</title>
 
@@ -21,13 +23,10 @@
             link.type = 'text/css';
             link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
             document.getElementsByTagName( 'head' )[0].appendChild( link );
-
-
-
     </script>
 </head>
 <body>
-<div class="reveal pikestreet">
+<div class="reveal">
     <div class="slides">
         <section
                 data-background-iframe="https://compass-ssl.surface.com/assets/11/4e/114ea758-b2b9-4567-bedd-77086c3d80fb.mp4?n=vid-loop-100314.mp4?autoplay=1"
@@ -48,116 +47,287 @@
             </aside>
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## Flutter 新一代跨平台解决方案
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Flutter 新一代跨平台解决方案
 
 
-                9102年，对于开发界来说，最火的技术是什么？
-                当然得是flutter。不管你是做前端，后端，Android，iOS，还是别的，都可以看到铺天盖地关于flutter的文章，
-                一片叫好声，声声入耳。
-                <!-- .element: class="fragment" style="text-align: left;" -->
+                    9102年，对于开发界来说，最火的技术是什么？
+                    当然得是flutter。不管你是做前端，后端，Android，iOS，还是别的，都可以看到铺天盖地关于flutter的文章，
+                    一片叫好声，声声入耳。
+                    <!-- .element: class="fragment" style="text-align: left;" -->
 
-                Flutter是Google公司推出的一套跨平台解决方案，Google 2019 I/O大会上宣称，目前支持Android/iOS/Desktop/Web/Embedded/，可以看到基本上涵盖了目前市面上所有的主流平台。
-                <!-- .element: class="fragment" style="text-align: left;" -->
+                    Flutter是Google公司推出的一套跨平台解决方案，Google 2019 I/O大会上宣称，目前支持Android/iOS/Desktop/Web/Embedded/，可以看到基本上涵盖了目前市面上所有的主流平台。
+                    <!-- .element: class="fragment" style="text-align: left;" -->
 
-            </script>
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 拿什么“睡”服我？(1)
+
+                    [Show case](https://flutter.dev/showcase)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    [More](https://itsallwidgets.com/)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+
+                </script>
+            </section>
+
+            <section data-markdown>
+                <script type="text/template">
+                    ## 拿什么“睡”服我？(2)
+
+                    基于浏览器技术的Hybird
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    基于桥接Native组件，如RN、WEEX
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    基于底层统一渲染，如Flutter
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+
+                </script>
+            </section>
+        
+            <section data-markdown>
+                <script type="text/template">
+                    ## Flutter vs React Native
+
+                    跨平台性
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    开发便利性
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    未来发展
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Flutter vs React Native
+    
+                    ![](images/react_native.png)
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## Flutter vs React Native
+        
+                    ![](images/flutter_arch.png)
+                </script>
+            </section>    
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## 拿什么“睡”服我？(1)
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x00 框架介绍
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 移动端框架
+                    ![](images/flutter-architecture.png)
+                </script>
+            </section>
 
-                [Show case](https://flutter.dev/showcase)
-                <!-- .element: class="fragment"style="text-align: left;"  -->
-                [More](https://itsallwidgets.com/)
-                <!-- .element: class="fragment"style="text-align: left;"  -->
+            <section data-markdown>
+                <script type="text/template">
+                    ## Web框架
+                    ![](images/flutter-architecture_web.png)
+                </script>
+            </section>
 
-            </script>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 核心原则
+                        
+                    万物皆Widget
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    组合大于继承
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+
+                </script>
+            </section>
+           <section data-markdown>
+                <script type="text/template">
+                    ## 项目结构
+
+
+                    资源适配
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    依赖库
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    主题
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    国际化
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    打包
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    json解析
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+
+                </script>
+            </section>
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## 拿什么“睡”服我？(2)
-
-                跨平台解决方案比较
-                目前主流的跨平台解决方案主要有如下几个：
-                <!-- .element: class="fragment"style="text-align: left;"  -->
-                1. 基于浏览器技术的Hybird
-                <!-- .element: class="fragment"style="text-align: left;"  -->
-                2. 基于桥接Native组件，如RN、WEEX
-                <!-- .element: class="fragment"style="text-align: left;"  -->
-                3. 基于底层统一渲染，如Flutter
-                <!-- .element: class="fragment"style="text-align: left;"  -->
-
-           </script>
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x01 工具安装、使用
+                    [官方通道](https://flutter.dev/docs/get-started/install)
+                </script>
+            </section>
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## 本次分享的内容如下：
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x02 基本组件学习
 
-                ### 0x00 框架介绍
-                <!-- .element: class="fragment" style="text-align: left;" -->
 
-                ### 0x01 工具安装、使用
-                <!-- .element: class="fragment" style="text-align: left;" -->
+                </script>
+            </section>
 
-                ### 0x02 基本组件学习
-                <!-- .element: class="fragment" style="text-align: left;" -->
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x02 基本组件学习
+                    ![](images/widget.png)
 
-                ### 0x03 常用库
-                <!-- .element: class="fragment" style="text-align: left;" -->
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## StatelessWidget和StatefulWidget
+    
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 生命周期
+        
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## App生命周期
 
-                ### 0x04 demo演示
-                <!-- .element: class="fragment"style="text-align: left;"  -->
+                    通过WidgetsBindingObserver的didChangeAppLifecycleState 来获取
+                    通过该接口可以获取是生命周期在AppLifecycleState类中。常用状态包含如下几个：
+                    
+                    resumed 
+                    可见并能相应用户的输入
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    inactive
+                    处在并不活动状态，无法处理用户相应
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    paused
+                    不可见并不能相应用户的输入，但是在后台继续活动中
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                </script>
+            </section>
 
-            </script>
+            <section data-markdown>
+                    <script type="text/template">
+                        ## State生命周期
+                    </script>
+            </section> 
+
+            <section data-background-image="images/stateful_lifecycle.png" data-background-size="600px">
+            </section>
+
+            <section data-markdown>
+                    <script type="text/template">
+                        ## 注意的点
+
+                        didChangeDependencies有两种情况会被调用。
+                        <br>创建时候在initState 之后被调用
+                        <br>在依赖的InheritedWidget发生变化的时候会被调用
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        正常的退出流程中会执行deactivate然后执行dispose。但是也会出现deactivate以后不执行dispose，直接加入树中的另一个节点的情况。
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        这里的状态改变包括两种可能：
+                        <br>1.通过setState内容改变 
+                        <br>2.父节点的state状态改变，导致孩子节点的同步变化。
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                    </script>
+            </section> 
+
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x00 移动端框架
-                ![](images/flutter-architecture.png)
-            </script>
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x03 常用库
+
+                    [官方通道](https://github.com/flutter/plugins)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    第三方推荐
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    [网络请求Dio](https://github.com/flutterchina/dio/blob/master/README-ZH.md)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    [SQLite数据库](https://github.com/tekartik/sqflite/blob/master/sqflite/README.md)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    [图片缓存](https://github.com/renefloor/flutter_cached_network_image)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+                    [轮播](https://github.com/best-flutter/flutter_swiper)
+                    <!-- .element: class="fragment" style="text-align: left;"  -->
+
+                </script>
+            </section>
+            <section data-markdown>
+                    <script type="text/template">
+                        ## 0x03 常用库
+    
+                        [Route](https://github.com/theyakka/fluro)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [下拉刷新](https://github.com/peng8350/flutter_pulltorefresh/blob/master/README_CN.md)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [Toast](https://github.com/PonnamKarthik/FlutterToast)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [图片缓存](https://github.com/renefloor/flutter_cached_network_image)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [国际化](https://github.com/dart-lang/intl)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [EventBus](https://github.com/marcojakob/dart-event-bus)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+    
+                    </script>
+            </section>
+            <section data-markdown>
+                    <script type="text/template">
+                        ## 0x03 常用库
+                        状态管理库
+
+                        [scoped_model](https://github.com/brianegan/scoped_model)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [provide](https://github.com/google/flutter-provide)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        bloc](https://github.com/felangel/bloc)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [RxDart](https://github.com/ReactiveX/rxdart)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                        [fish_Redux](https://github.com/alibaba/fish-redux)
+                        <!-- .element: class="fragment" style="text-align: left;"  -->
+                    </script>
+            </section>
         </section>
 
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x00 Web框架
-                ![](images/flutter-architecture_web.png)
-            </script>
+        <section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x04 demo演示
+
+                </script>
+            </section>
+            <section data-markdown>
+                <script type="text/template">
+                    ## 0x04 demo演示
+
+                </script>
+            </section>
         </section>
-
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x01 工具安装、使用
-
-            </script>
-        </section>
-
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x02 基本组件学习
-
-            </script>
-        </section>
-
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x03 常用库
-
-            </script>
-        </section>
-
-        <section data-markdown>
-            <script type="text/template">
-                ## 0x04 demo演示
-
-            </script>
-        </section>
-
     </div>
+
 </div>
 
 <script src="js/reveal.js"></script>
@@ -169,6 +339,9 @@
             Reveal.initialize({
                 autoPlayMedia: true,
                 preloadIframes: true,
+                controls: true,
+                progress: true,
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },
                     { src: 'plugin/markdown/markdown.js' },
@@ -176,6 +349,15 @@
                     { src: 'plugin/highlight/highlight.js', async: true }
                 ]
             });
+
+
+
+
+
+
+
+
+
 
 
 
